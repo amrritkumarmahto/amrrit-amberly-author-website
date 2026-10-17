@@ -46,7 +46,14 @@ The book description and author biography are the author's official text, copied
 - **Pull-quote:** the large quote between the Book and Series sections is a design element. It's a line taken from the book description and is labelled that way.
 
 ### Book cover
-The official cover is at `images/the-bed-was-still-warm-cover.jpg`. To replace it later, save the new image over that file, keeping the same name. If the new image has different proportions, update the `width` and `height` numbers on the `<img>` tag in `index.html` to match.
+The official cover is at `images/the-bed-was-still-warm-cover.jpg` (full size, 1600 × 2560). There are also two smaller web copies, so phones don't have to download the full 1.9 MB file:
+
+- `images/the-bed-was-still-warm-cover-800.jpg`
+- `images/the-bed-was-still-warm-cover-1200.jpg`
+
+Each browser automatically picks the smallest copy that still looks sharp on that screen.
+
+To replace the cover later, save the new image over all three files, keeping the same names. Make the web copies 800 and 1200 pixels wide. If the new image has different proportions, also update the `width` and `height` numbers on the `<img>` tag in `index.html`.
 
 ### Adding an author photo
 Put the photo at `assets/author.jpg`. In `index.html`, replace `<span class="about__monogram">AA</span>` with:
