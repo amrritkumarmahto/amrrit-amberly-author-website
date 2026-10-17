@@ -45,12 +45,8 @@ The book description and author biography are the author's official text, copied
 - **Email:** amrritamberly@gmail.com
 - **Pull-quote:** the large quote between the Book and Series sections is a design element. It's a line taken from the book description and is labelled that way.
 
-### Adding your real book cover
-The book section currently shows a typographic **title card**, not the real cover. To swap in your cover:
-1. Save your cover image as `assets/cover.jpg`.
-2. In `index.html`, find the `BOOK COVER SLOT` comment.
-3. Delete the `<div class="book__titlecard book__cover" ...> ... </div>` block.
-4. Un-comment the `<img class="book__cover-img" ...>` line just above it.
+### Book cover
+The official cover is at `images/the-bed-was-still-warm-cover.jpg`. To replace it later, save the new image over that file, keeping the same name. If the new image has different proportions, update the `width` and `height` numbers on the `<img>` tag in `index.html` to match.
 
 ### Adding an author photo
 Put the photo at `assets/author.jpg`. In `index.html`, replace `<span class="about__monogram">AA</span>` with:

@@ -74,27 +74,13 @@
     <section class="section book" id="book" aria-labelledby="book-title">
       <div class="container book__grid">
 
-        <!-- ===== BOOK COVER SLOT =====
-             This is a typographic title card, NOT the real book cover.
-             To show your real cover:
-               1. Save the image as assets/cover.jpg
-               2. Delete the whole <div class="book__titlecard"> ... </div> block below
-               3. Un-comment the <img> line just below (remove the comment
-                  markers at its start and end)
-        -->
-        <div class="book__cover-wrap reveal">
-          <!-- <img class="book__cover-img" src="assets/cover.jpg" alt="Cover of The Bed Was Still Warm by Amrrit Amberly" width="600" height="900"> -->
-
-          <div class="book__titlecard book__cover" aria-hidden="true">
-            <div class="cover__top">A Reckoning of Names &middot; Book 1</div>
-            <div class="cover__mid">
-              <span class="cover__rule"></span>
-              <span class="cover__title">The Bed<br>Was Still<br><em>Warm</em></span>
-              <span class="cover__rule"></span>
-            </div>
-            <div class="cover__author">Amrrit Amberly</div>
-          </div>
-        </div>
+        <!-- Official book cover. Shown whole, at its original proportions (1600 x 2560). -->
+        <figure class="book__cover-wrap reveal">
+          <img class="book__cover-img"
+               src="images/the-bed-was-still-warm-cover.jpg"
+               alt="The Bed Was Still Warm by Amrrit Amberly, a psychological thriller and Book One of A Reckoning of Names."
+               width="1600" height="2560" decoding="async">
+        </figure>
 
         <div class="book__info">
           <p class="eyebrow reveal">Featured Book</p>
