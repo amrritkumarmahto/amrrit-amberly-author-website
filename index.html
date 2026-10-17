@@ -215,10 +215,16 @@
     <!-- ===================== ABOUT THE AUTHOR ===================== -->
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container about__grid">
-        <!-- Official author portrait. Original photograph, shown whole (1122 x 1122) with no filters. -->
+        <!-- Official author portrait. Original photograph, shown whole (1122 x 1122) with no filters.
+             The browser picks the smallest copy that stays sharp on each screen:
+             -700 and -1000 are resized web copies; the .png is the original file. -->
         <figure class="about__portrait reveal">
           <img class="about__portrait-img"
-               src="images/amrrit-amberly-author.png"
+               src="images/amrrit-amberly-author-700.jpg"
+               srcset="images/amrrit-amberly-author-700.jpg 700w,
+                       images/amrrit-amberly-author-1000.jpg 1000w,
+                       images/amrrit-amberly-author.png 1122w"
+               sizes="(max-width: 820px) min(calc(100vw - 2rem - 14px), 326px), 346px"
                alt="Portrait of author Amrrit Amberly."
                width="1122" height="1122" loading="lazy" decoding="async">
         </figure>
