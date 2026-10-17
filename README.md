@@ -36,18 +36,21 @@ It's a plain **HTML + CSS + JavaScript** site. It needs no framework, database o
   - The contact form opens your email app with the message already filled in.
   - Sections fade in gently as you scroll.
 
-## Things to personalise (marked `PLACEHOLDER` in `index.html`)
+## Content
 
-1. **Purchase link.** Right now **Buy the Book** opens an Amazon *search* for the title. Replace the `href` with your exact book page link.
-2. **Book description.** The short blurb is generic placeholder text. Replace it with your official description.
-3. **Author bio.** Replace it with your own words.
-4. **Tagline.** "Every name carries a debt. Every debt comes due." is suggested copy. Change it or remove it.
+The book description and author biography are the author's official text, copied word for word. Please don't edit them except to update them.
+
+- **Purchase link:** every "Buy" button goes to https://a.co/d/0goHBiIt and opens in a new tab.
+- **Instagram:** [@amrritamberly](https://instagram.com/amrritamberly). It appears in the About section, the Contact section and the footer.
+- **Email:** amrritamberly@gmail.com
+- **Pull-quote:** the large quote between the Book and Series sections is a design element. It's a line taken from the book description and is labelled that way.
 
 ### Adding your real book cover
-Put your cover image at `assets/cover.jpg`. In `index.html`, replace the whole `<div class="book__cover" ...> ... </div>` block with:
-```html
-<img class="book__cover-img" src="assets/cover.jpg" alt="Cover of The Bed Was Still Warm by Amrrit Amberly">
-```
+The book section currently shows a typographic **title card**, not the real cover. To swap in your cover:
+1. Save your cover image as `assets/cover.jpg`.
+2. In `index.html`, find the `BOOK COVER SLOT` comment.
+3. Delete the `<div class="book__titlecard book__cover" ...> ... </div>` block.
+4. Un-comment the `<img class="book__cover-img" ...>` line just above it.
 
 ### Adding an author photo
 Put the photo at `assets/author.jpg`. In `index.html`, replace `<span class="about__monogram">AA</span>` with:

@@ -38,7 +38,7 @@
         <li><a href="#series">The Series</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="nav__cta" href="#book">Buy Now</a></li>
+        <li><a class="nav__cta" href="https://a.co/d/0goHBiIt" target="_blank" rel="noopener">Buy Now</a></li>
       </ul>
     </nav>
   </header>
@@ -74,11 +74,19 @@
     <section class="section book" id="book" aria-labelledby="book-title">
       <div class="container book__grid">
 
-        <!-- Book cover. This is a typographic stand-in.
-             To use your real cover, see README.md ("Adding your real book cover"). -->
+        <!-- ===== BOOK COVER SLOT =====
+             This is a typographic title card, NOT the real book cover.
+             To show your real cover:
+               1. Save the image as assets/cover.jpg
+               2. Delete the whole <div class="book__titlecard"> ... </div> block below
+               3. Un-comment the <img> line just below (remove the comment
+                  markers at its start and end)
+        -->
         <div class="book__cover-wrap reveal">
-          <div class="book__cover" role="img" aria-label="Cover of The Bed Was Still Warm by Amrrit Amberly">
-            <div class="cover__top">A Reckoning of Names &middot; I</div>
+          <!-- <img class="book__cover-img" src="assets/cover.jpg" alt="Cover of The Bed Was Still Warm by Amrrit Amberly" width="600" height="900"> -->
+
+          <div class="book__titlecard book__cover" aria-hidden="true">
+            <div class="cover__top">A Reckoning of Names &middot; Book 1</div>
             <div class="cover__mid">
               <span class="cover__rule"></span>
               <span class="cover__title">The Bed<br>Was Still<br><em>Warm</em></span>
@@ -89,33 +97,66 @@
         </div>
 
         <div class="book__info">
-          <p class="eyebrow reveal">Featured Book &middot; Debut Novel</p>
+          <p class="eyebrow reveal">Featured Book</p>
           <h2 class="section__title reveal" id="book-title">The Bed Was Still Warm</h2>
-          <p class="book__subtitle reveal">A Psychological Thriller &mdash; A Reckoning of Names, Book 1</p>
-
-          <!-- PLACEHOLDER BLURB: replace with your official book description. -->
-          <div class="book__blurb reveal">
-            <p class="book__hook">Some absences leave a mark. Some leave a warmth that should not be there.</p>
-            <p>
-              The debut psychological thriller from Amrrit Amberly opens the
-              <em>A Reckoning of Names</em> series &mdash; a story of secrets,
-              identity, and the unsettling distance between what we are told
-              and what is true.
-            </p>
-          </div>
+          <p class="book__subtitle reveal">A Psychological Thriller</p>
 
           <ul class="book__meta reveal">
-            <li><span>Genre</span>Psychological Thriller</li>
             <li><span>Series</span>A Reckoning of Names</li>
-            <li><span>Book</span>One</li>
+            <li><span>Book</span>1</li>
+            <li><span>Genre</span>Psychological Thriller</li>
           </ul>
 
           <div class="book__actions reveal">
-            <!-- PURCHASE LINK: replace the href below with your exact book page link
-                 (for example your Amazon product URL). Currently it opens an Amazon search. -->
-            <a class="btn btn--primary btn--lg"
-               href="https://www.amazon.com/s?k=The+Bed+Was+Still+Warm+Amrrit+Amberly"
-               target="_blank" rel="noopener">
+            <a class="btn btn--primary btn--lg" href="https://a.co/d/0goHBiIt" target="_blank" rel="noopener">
+              Buy the Book
+            </a>
+          </div>
+
+          <!-- Official book description (author-supplied text — keep verbatim). -->
+          <div class="book__blurb">
+            <p class="book__hook reveal">She was hired to work inside the house.</p>
+            <p class="book__hook reveal">She wasn't supposed to investigate it.</p>
+
+            <p class="reveal">Mara Vale expects six months of quiet administrative work at Vellamere House, an isolated estate overlooking Kettle Lake. The salary is generous. The work is straightforward. And the Voss family seems determined to keep their distance.</p>
+
+            <p class="book__beat reveal">Then Mara discovers a room nobody is supposed to enter.</p>
+
+            <p class="reveal">The family says Elena Voss disappeared twelve years ago.</p>
+
+            <p class="reveal">But a photograph places Elena alive six months after she was reported missing.</p>
+
+            <p class="reveal">Mara begins pulling at the loose threads: unexplained footsteps, household records that don't add up, photographs that reveal details the family has not explained, and a family history that changes depending on who tells it.</p>
+
+            <p class="book__beat reveal">Then she finds something stranger.</p>
+
+            <p class="reveal">Years before Elena disappeared, she had been investigating an unnamed child connected to a former Vellamere employee named Clara Bell. At Larch Hill, another Voss property, Mara discovers Elena's handwritten research notes, references to the child, and two initials that may connect the old mystery to something much closer to home.</p>
+
+            <p class="book__beat reveal">Then Mara learns the truth about her own arrival.</p>
+
+            <p class="reveal">Victor Voss knew her name before the employment agency formally presented her as a candidate.</p>
+
+            <p class="reveal">He also knows details about Mara's childhood that she never remembers giving the family.</p>
+
+            <p class="reveal">Mara came to Vellamere believing she was an outsider investigating a family's secrets.</p>
+
+            <p class="reveal">Now she has to consider a far more disturbing possibility:</p>
+
+            <p class="book__question reveal">What if she was brought there because she was already part of the story?</p>
+
+            <p class="reveal">And if Elena spent years investigating the same mystery Mara has now uncovered, what did Elena discover before she disappeared?</p>
+
+            <div class="book__closing reveal">
+              <p>The house has secrets.</p>
+              <p>The family has names.</p>
+              <p>And Mara has just discovered that her own story may be connected to theirs.</p>
+            </div>
+
+            <p class="book__summary reveal"><em>The Bed Was Still Warm</em> is a psychological thriller about buried family secrets, missing years, concealed identities, and the dangerous consequences of discovering that your own past may not be as certain as you believed.</p>
+          </div>
+
+          <div class="book__actions book__actions--end reveal">
+            <a class="btn btn--primary btn--lg" href="https://a.co/d/0goHBiIt" target="_blank" rel="noopener">
               Buy the Book
             </a>
             <a class="btn btn--ghost" href="#contact">Contact the Author</a>
@@ -125,11 +166,15 @@
     </section>
 
     <!-- ===================== QUOTE / DIVIDER ===================== -->
-    <section class="interlude" aria-label="Series tagline">
+    <!-- Design pull-quote: a line taken word-for-word from the book description above. -->
+    <section class="interlude" aria-label="Quote from the book description">
       <div class="container">
-        <p class="interlude__text reveal">
-          Every name carries a debt.<br><em>Every debt comes due.</em>
-        </p>
+        <figure class="interlude__figure reveal">
+          <blockquote class="interlude__text">
+            What if she was brought there because she was <em>already part of the story?</em>
+          </blockquote>
+          <figcaption class="interlude__caption">From the book description</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -139,10 +184,9 @@
         <header class="section__head">
           <p class="eyebrow reveal">The Series</p>
           <h2 class="section__title reveal" id="series-title">A Reckoning of Names</h2>
+          <p class="series__kicker reveal">Ten-book psychological thriller series</p>
           <p class="section__lead reveal">
-            A psychological thriller series about identity, memory, and the
-            secrets hidden inside the names we are given. It begins with
-            <em>The Bed Was Still Warm</em>.
+            Book 1: <em>The Bed Was Still Warm</em>
           </p>
         </header>
 
@@ -150,7 +194,7 @@
           <li class="series-card series-card--active reveal">
             <span class="series-card__num">I</span>
             <div>
-              <p class="series-card__label">Book One &middot; Available Now</p>
+              <p class="series-card__label">Book 1 &middot; Available Now</p>
               <h3 class="series-card__title">The Bed Was Still Warm</h3>
               <a class="series-card__link" href="#book">View book &rarr;</a>
             </div>
@@ -158,7 +202,7 @@
           <li class="series-card reveal">
             <span class="series-card__num">II</span>
             <div>
-              <p class="series-card__label">Book Two</p>
+              <p class="series-card__label">Book 2</p>
               <h3 class="series-card__title series-card__title--muted">Coming Soon</h3>
               <a class="series-card__link" href="#contact">Get notified &rarr;</a>
             </div>
@@ -166,12 +210,13 @@
           <li class="series-card reveal">
             <span class="series-card__num">III</span>
             <div>
-              <p class="series-card__label">Book Three</p>
+              <p class="series-card__label">Book 3</p>
               <h3 class="series-card__title series-card__title--muted">To Be Revealed</h3>
               <a class="series-card__link" href="#contact">Get notified &rarr;</a>
             </div>
           </li>
         </ol>
+        <p class="series__note reveal">Books 4&ndash;10 to be revealed.</p>
       </div>
     </section>
 
@@ -187,17 +232,23 @@
           <p class="eyebrow reveal">About the Author</p>
           <h2 class="section__title reveal" id="about-title">Amrrit Amberly</h2>
 
-          <!-- PLACEHOLDER BIO: replace with your own words. -->
-          <p class="reveal">
-            Amrrit Amberly writes psychological thrillers that live in the quiet
-            places &mdash; the familiar room, the trusted face, the name you
-            thought you knew. Their fiction explores identity, memory, and the
-            secrets people carry long after they should have let them go.
-          </p>
-          <p class="reveal">
-            <em>The Bed Was Still Warm</em> is Amrrit Amberly&rsquo;s debut novel
-            and the first book in the <em>A Reckoning of Names</em> series.
-          </p>
+          <!-- Official author biography (author-supplied text — keep verbatim). -->
+          <div class="about__bio">
+            <p class="reveal">Amrrit Amberly is a self-published author with a bachelor’s degree in English Literature. He writes psychological thrillers centered on family secrets, disappearances, hidden identities, deception, fractured relationships, and the disturbing truths people try hardest to hide.</p>
+
+            <p class="reveal">Fascinated by the darker corners of human behavior, Amrrit’s stories explore what happens when ordinary lives begin to unravel and the people closest to us become impossible to trust.</p>
+
+            <p class="reveal">With countless stories and worlds living in his head, Amrrit had always dreamed of becoming an author. After graduating in 2023, he began writing seriously, though for years he kept his stories to himself and never showed them to anyone.</p>
+
+            <p class="reveal">In the autumn of 2026, he finally followed that dream and became a full-time author.</p>
+
+            <p class="reveal">Amrrit is the author of <em>The Bed Was Still Warm</em>, the first book in <em>A Reckoning of Names</em>, a ten-book psychological thriller series.</p>
+          </div>
+
+          <a class="social-link reveal" href="https://instagram.com/amrritamberly" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
+            <span>Instagram <strong>@amrritamberly</strong></span>
+          </a>
         </div>
       </div>
     </section>
@@ -211,7 +262,9 @@
           <p class="section__lead reveal">
             For reader messages, media enquiries, events, or rights requests,
             write to
-            <a class="contact__email" href="mailto:amrritamberly@gmail.com">amrritamberly@gmail.com</a>.
+            <a class="contact__email" href="mailto:amrritamberly@gmail.com">amrritamberly@gmail.com</a>
+            or find Amrrit on Instagram at
+            <a class="contact__email" href="https://instagram.com/amrritamberly" target="_blank" rel="noopener">@amrritamberly</a>.
           </p>
         </header>
 
@@ -258,6 +311,7 @@
         <li><a href="#book">The Book</a></li>
         <li><a href="#series">The Series</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="https://instagram.com/amrritamberly" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="mailto:amrritamberly@gmail.com">Email</a></li>
       </ul>
       <p class="footer__copy">&copy; <span id="year">2026</span> Amrrit Amberly. All rights reserved.</p>

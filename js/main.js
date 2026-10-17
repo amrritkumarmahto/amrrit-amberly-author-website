@@ -68,7 +68,8 @@ const revealItems = document.querySelectorAll(".reveal");
 // Stagger items that sit next to each other so they appear one after another.
 revealItems.forEach((item) => {
   const siblings = [...item.parentElement.children].filter((el) => el.classList.contains("reveal"));
-  item.style.setProperty("--delay", `${siblings.indexOf(item) * 0.12}s`);
+  // Capped so long groups (like the book description) don't lag behind the scroll.
+  item.style.setProperty("--delay", `${Math.min(siblings.indexOf(item), 3) * 0.12}s`);
 });
 
 if ("IntersectionObserver" in window) {
