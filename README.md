@@ -55,12 +55,8 @@ Each browser automatically picks the smallest copy that still looks sharp on tha
 
 To replace the cover later, save the new image over all three files, keeping the same names. Make the web copies 800 and 1200 pixels wide. If the new image has different proportions, also update the `width` and `height` numbers on the `<img>` tag in `index.html`.
 
-### Adding an author photo
-Put the photo at `assets/author.jpg`. In `index.html`, replace `<span class="about__monogram">AA</span>` with:
-```html
-<img src="assets/author.jpg" alt="Amrrit Amberly">
-```
-Also remove `aria-hidden="true"` from the `about__portrait` div.
+### Author portrait
+The author photo is at `images/amrrit-amberly-author.png` (the original file, 1122 × 1122). To replace it, save the new photo over that file, keeping the same name. If the new photo isn't square, update the `width` and `height` numbers on its `<img>` tag in `index.html` to match.
 
 ## Publishing (later, when you're ready)
 
