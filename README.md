@@ -51,9 +51,9 @@ The official cover is at `images/the-bed-was-still-warm-cover.jpg` (full size, 1
 - `images/the-bed-was-still-warm-cover-800.jpg`
 - `images/the-bed-was-still-warm-cover-1200.jpg`
 
-Each browser automatically picks the smallest copy that still looks sharp on that screen.
+It also has WebP copies, a newer format that is much smaller at the same quality: `-800.webp`, `-1200.webp` and `-1600.webp`. Browsers that support WebP (all modern ones) use these. Older browsers fall back to the `.jpg` copies. Each browser automatically picks the smallest copy that still looks sharp on that screen.
 
-To replace the cover later, save the new image over all three files, keeping the same names. Make the web copies 800 and 1200 pixels wide. If the new image has different proportions, also update the `width` and `height` numbers on the `<img>` tag in `index.html`.
+To replace the cover later, save the new image over these files, keeping the same names. Make the web copies 800, 1200 and 1600 pixels wide. If the new image has different proportions, also update the `width` and `height` numbers on the `<img>` tag in `index.html`.
 
 ### Author portrait
 The author photo is at `images/amrrit-amberly-author.png` (the original file, 1122 × 1122). There are also two smaller web copies, which each browser picks between automatically:
@@ -61,7 +61,9 @@ The author photo is at `images/amrrit-amberly-author.png` (the original file, 11
 - `images/amrrit-amberly-author-700.jpg`
 - `images/amrrit-amberly-author-1000.jpg`
 
-To replace the photo later, save the new photo over all three files, keeping the same names. Make the web copies 700 and 1000 pixels wide. If the new photo isn't square, also update the `width` and `height` numbers on its `<img>` tag in `index.html`.
+It also has WebP copies, which modern browsers use: `-700.webp` and `-1000.webp`.
+
+To replace the photo later, save the new photo over these files, keeping the same names. Make the web copies 700 and 1000 pixels wide. If the new photo isn't square, also update the `width` and `height` numbers on its `<img>` tag in `index.html`.
 
 ## Publishing (later, when you're ready)
 

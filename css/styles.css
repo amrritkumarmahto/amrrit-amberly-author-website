@@ -368,6 +368,10 @@ em { font-style: italic; }
   top: 110px;
 }
 
+/* <picture> only chooses the file; it adds no box of its own, so layout is unchanged. */
+.book__cover-wrap picture,
+.about__portrait picture { display: contents; }
+
 /* Official cover: never cropped or stretched — width and height scale together. */
 .book__cover-img {
   display: block;

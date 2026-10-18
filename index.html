@@ -75,17 +75,26 @@
       <div class="container book__grid">
 
         <!-- Official book cover. Shown whole, at its original proportions (1600 x 2560).
-             The browser picks the smallest copy that stays sharp on each screen:
-             -800 and -1200 are resized web copies; the original is the full-size file. -->
+             Browsers that support WebP get the small .webp copies; others get the .jpg copies.
+             Each browser picks the smallest copy that stays sharp on its screen.
+             The original full-size file is images/the-bed-was-still-warm-cover.jpg.
+             Not lazy-loaded: it is the main image, directly below the opening screen. -->
         <figure class="book__cover-wrap reveal">
-          <img class="book__cover-img"
-               src="images/the-bed-was-still-warm-cover-800.jpg"
-               srcset="images/the-bed-was-still-warm-cover-800.jpg 800w,
-                       images/the-bed-was-still-warm-cover-1200.jpg 1200w,
-                       images/the-bed-was-still-warm-cover.jpg 1600w"
-               sizes="(max-width: 820px) min(82vw, 340px), 380px"
-               alt="The Bed Was Still Warm by Amrrit Amberly, a psychological thriller and Book One of A Reckoning of Names."
-               width="1600" height="2560" decoding="async">
+          <picture>
+            <source type="image/webp"
+                    srcset="images/the-bed-was-still-warm-cover-800.webp 800w,
+                            images/the-bed-was-still-warm-cover-1200.webp 1200w,
+                            images/the-bed-was-still-warm-cover-1600.webp 1600w"
+                    sizes="(max-width: 820px) min(82vw, 340px), 380px">
+            <img class="book__cover-img"
+                 src="images/the-bed-was-still-warm-cover-800.jpg"
+                 srcset="images/the-bed-was-still-warm-cover-800.jpg 800w,
+                         images/the-bed-was-still-warm-cover-1200.jpg 1200w,
+                         images/the-bed-was-still-warm-cover.jpg 1600w"
+                 sizes="(max-width: 820px) min(82vw, 340px), 380px"
+                 alt="The Bed Was Still Warm by Amrrit Amberly, a psychological thriller and Book One of A Reckoning of Names."
+                 width="1600" height="2560" decoding="async">
+          </picture>
         </figure>
 
         <div class="book__info">
@@ -216,17 +225,24 @@
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="container about__grid">
         <!-- Official author portrait. Original photograph, shown whole (1122 x 1122) with no filters.
-             The browser picks the smallest copy that stays sharp on each screen:
-             -700 and -1000 are resized web copies; the .png is the original file. -->
+             Browsers that support WebP get the small .webp copies; others get the .jpg copies.
+             The original file is images/amrrit-amberly-author.png.
+             Lazy-loaded: it sits well below the opening screen. -->
         <figure class="about__portrait reveal">
-          <img class="about__portrait-img"
-               src="images/amrrit-amberly-author-700.jpg"
-               srcset="images/amrrit-amberly-author-700.jpg 700w,
-                       images/amrrit-amberly-author-1000.jpg 1000w,
-                       images/amrrit-amberly-author.png 1122w"
-               sizes="(max-width: 820px) min(calc(100vw - 2rem - 14px), 326px), 346px"
-               alt="Portrait of author Amrrit Amberly."
-               width="1122" height="1122" loading="lazy" decoding="async">
+          <picture>
+            <source type="image/webp"
+                    srcset="images/amrrit-amberly-author-700.webp 700w,
+                            images/amrrit-amberly-author-1000.webp 1000w"
+                    sizes="(max-width: 820px) min(calc(100vw - 2rem - 14px), 326px), 346px">
+            <img class="about__portrait-img"
+                 src="images/amrrit-amberly-author-700.jpg"
+                 srcset="images/amrrit-amberly-author-700.jpg 700w,
+                         images/amrrit-amberly-author-1000.jpg 1000w,
+                         images/amrrit-amberly-author.png 1122w"
+                 sizes="(max-width: 820px) min(calc(100vw - 2rem - 14px), 326px), 346px"
+                 alt="Portrait of author Amrrit Amberly."
+                 width="1122" height="1122" loading="lazy" decoding="async">
+          </picture>
         </figure>
 
         <div class="about__text">
